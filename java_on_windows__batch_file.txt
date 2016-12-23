@@ -1,0 +1,3 @@
+@echo off
+java -cp bin ConnectFourAI %*
+exit /b %errorlevel%

@@ -1,0 +1,16 @@
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.sublime*
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+.hgignore
+.hg/
+
+/resources/public/js
+/figwheel_server.log
+connect-four.zip

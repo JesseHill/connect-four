@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Connect Four</title>
+  <link rel="stylesheet" href="../css/connect-four.css" />
+</head>
+
+<style>
+  body {
+    display: flex;
+    min-height: 200px;
+  }
+  .left-column, .center-column, .right-column {
+    flex: 1;
+    flex-grow: 1;
+    height: 100%;
+  }
+  .left-column {
+    background: #eee;
+  }
+  .center-column {
+    background: #ddd;
+  }
+  .right-column {
+    background: #ccc;
+  }
+  .fillIt {
+    background: #f00;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<body>
+  <div class="left-column">
+    <div class="fillIt"></div>
+
+  </div>
+  <div class="center-column"></div>
+  <div class="right-column"></div>
+
+</body>
+</html>
+

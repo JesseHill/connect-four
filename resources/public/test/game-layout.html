@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Connect Four</title>
+  <link rel="stylesheet" href="../css/connect-four.css" />
+</head>
+
+<body>
+  <div id="app" class="cf-app-container">
+    <div class="cf-title-area">
+      <div class="cf-logo"> <img src="../images/atomic-games-logo.svg"> </div>
+    </div>
+    <div class="cf-message-area">
+      <div class="cf-message cf-message-player-one">Player One has won!</div>
+    </div>
+    <div class="cf-game-area-wrapper">
+      <div class="cf-game-area">
+        <div class="cf-team-sidebar cf-team-one-sidebar">
+          <div class="cf-team-name">Team Atomic</div>
+          <div class="cf-spinner">
+            <div class="cf-bounce-1"></div>
+            <div class="cf-bounce-2"></div>
+            <div class="cf-bounce-3"></div>
+          </div>
+        </div>
+        <div class="cf-game-board-wrapper">
+          <div class="cf-game-board">
+            <div id="cf-id-game-board-row-0" class="cf-game-board-row">
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+            </div>
+            <div id="cf-id-game-board-row-1" class="cf-game-board-row">
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+            </div>
+            <div id="cf-id-game-board-row-2" class="cf-game-board-row">
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+            </div>
+            <div id="cf-id-game-board-row-3" class="cf-game-board-row">
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell">
+                <div class="cf-game-board-piece cf-game-board-piece-player-1 cf-current-move"></div>
+              </div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+            </div>
+            <div id="cf-id-game-board-row-4" class="cf-game-board-row">
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell">
+                <div class="cf-game-board-piece cf-game-board-piece-player-2"></div>
+              </div>
+              <div class="cf-game-board-cell">
+                <div class="cf-game-board-piece cf-game-board-piece-player-1"></div>
+              </div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+            </div>
+            <div id="cf-id-game-board-row-5" class="cf-game-board-row">
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell">
+                <div class="cf-game-board-piece cf-game-board-piece-player-1"></div>
+              </div>
+              <div class="cf-game-board-cell">
+                <div class="cf-game-board-piece cf-game-board-piece-player-2"></div>
+              </div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+              <div class="cf-game-board-cell"></div>
+            </div>
+          </div>
+          <div class="cf-game-board-cover"></div>
+        </div>
+        <div class="cf-team-sidebar cf-team-two-sidebar">
+          <div class="cf-team-name">Team Object</div>
+          <div class="cf-spinner">
+              <div class="cf-bounce-1"></div>
+              <div class="cf-bounce-2"></div>
+              <div class="cf-bounce-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

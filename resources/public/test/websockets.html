@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Web Sockets Yo</title>
+  <script
+    src="https://code.jquery.com/jquery-3.1.0.js"
+    integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+    crossorigin="anonymous">
+  </script>
+
+  <style>
+    #console {
+      background-color: #eee;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div>This is a websocket test!</div>
+  <div id="console"/>
+</body>
+
+<script>
+  console.log("Yes, hello");
+  var socket = new WebSocket("ws://localhost:5000/api/game-state");
+  socket.onopen = function(event) {
+    console.log("Socket connection established.");
+    socket.send("Well hello there");
+  };
+  socket.onmessage = function(event) {
+    var reader = new FileReader();
+    reader.addEventListener("loadend", function() {
+      console.log(reader.result);
+      $("#console").append("<div>" + reader.result + "</div>");
+    });
+    reader.readAsText(event.data);
+  }
+</script>
+</html>
+
